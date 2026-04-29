@@ -4,8 +4,6 @@ Scenarioanalyse for utgående distribusjon i Norge, med fokus på **fleet sizing
 
 ## Hva prosjektet handler om
 
-Dette prosjektet handler ikke først og fremst om kode. Det handler om å bruke data, simulering og ruteoptimalisering til å svare på reelle logistikkspørsmål:
-
 - Hvor mange biler bør en distribusjonsmodell ha?
 - Når bør bilene starte på dagen?
 - Hvilke SLA-løfter er realistiske?
@@ -96,7 +94,7 @@ På toppen av dette er det bygget en egen scenario- og beslutningsmodell som vur
 - ekstra km per stopp
 - faste bilkostnader i senere versjoner
 
-Prosjektet er derfor ikke bare en ruteoptimalisering, men en **scenarioanalyse for distribusjonsdesign**.
+Prosjektet er derfor ikke en ruteoptimalisering, men en **scenarioanalyse for distribusjonsdesign**.
 
 ---
 
@@ -220,10 +218,6 @@ Dette gjorde at:
 - forskjellene mellom scenarioene ble tydeligere
 - “for gode” løsninger fremsto mindre magiske
 
-**Metodisk tolkning:**  
-Et viktig funn i prosjektet er ikke bare hva som vant, men hvordan mer realistisk kalibrering endret hvilke løsninger som faktisk så robuste ut.
-
----
 
 ## Anbefalt driftsmodell
 
@@ -307,9 +301,7 @@ Prosjektet inneholder også egne oppsummeringsfiler som støtter funnene:
 - `cost_vs_weekly_km_increase_points.csv` brukes til å vise hvordan økt geografisk friksjon påvirker kost
 - `service_vs_weekly_km_increase_points.csv` brukes til å vise hvordan økt friksjon påvirker SLA-ytelse
 
-Disse filene er spesielt nyttige fordi de gjør det lettere å formidle funnene uten å måtte lese all rå output direkte.
 
----
 
 ## Begrensninger
 
@@ -326,33 +318,4 @@ Likevel er modellen godt egnet til å sammenligne driftsoppsett og støtte beslu
 
 ---
 
-## Relevans
 
-Dette prosjektet er relevant for roller innen:
-
-- logistikk
-- supply chain
-- transportplanlegging
-- analyse
-- operations
-- continuous improvement
-
-Det viser evne til å:
-
-- strukturere et komplekst logistikkproblem
-- bygge en analysemodell
-- tolke resultater faglig
-- skille mellom teoretisk mulig og operasjonelt realistisk
-- kommunisere funn som faktisk kan brukes i praksis
-
----
-
-## Mulige neste steg
-
-Naturlige videreføringer av prosjektet kan være:
-
-- flere uker og flere ordremønstre
-- mer eksplisitt trafikkmodell
-- enda mer realistisk modellering av skiftbytter og ventetid
-- utvidet kostmodell
-- dashboard-/ledelsesversjon av de viktigste funnene
